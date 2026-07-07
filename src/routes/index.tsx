@@ -1,24 +1,194 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import heroImg from "@/assets/hero-munnar.jpg";
+import mysoreImg from "@/assets/dest-mysore.jpg";
+import coorgImg from "@/assets/dest-coorg.jpg";
+import alleppeyImg from "@/assets/dest-alleppey.jpg";
+import ootyImg from "@/assets/dest-ooty.jpg";
+import { SitePage } from "@/components/site/SiteChrome";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+const featured = [
+  { name: "Mysore", tag: "Palace city", img: mysoreImg },
+  { name: "Coorg", tag: "Coffee country", img: coorgImg },
+  { name: "Ooty", tag: "Nilgiri hills", img: ootyImg },
+  { name: "Alleppey", tag: "Backwaters", img: alleppeyImg },
+];
+
+const services = [
+  { title: "Local Sightseeing", body: "Mysore Palace, Chamundi Hills, Brindavan Gardens and every corner of the city — on your schedule." },
+  { title: "Outstation Tours", body: "Curated multi-day journeys across South India with experienced local drivers who know every route." },
+  { title: "Airport Transfers", body: "Punctual, comfortable pick-ups and drops from Mysore, Bangalore, and Mangalore airports." },
+  { title: "Honeymoon Packages", body: "Private cars, boutique stays and quiet itineraries designed for two — Coorg, Munnar, Alleppey." },
+];
+
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <SitePage>
+      {/* HERO */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroImg}
+            alt="Misty tea plantations in Munnar at golden hour"
+            width={1920}
+            height={1200}
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/10 to-background" />
+        </div>
+        <div className="relative container-narrow py-32 md:py-44">
+          <p className="text-xs uppercase tracking-[0.35em] text-foreground/80">
+            Mysore · Est. private travel
+          </p>
+          <h1 className="mt-6 font-serif text-6xl md:text-8xl leading-[0.95] max-w-4xl">
+            South India,
+            <br />
+            <em className="italic text-primary">unhurried.</em>
+          </h1>
+          <p className="mt-8 max-w-xl text-lg text-foreground/80">
+            A to B Cabs is a small, family-run travel service from Mysore.
+            Clean cars, honest fares, and drivers who genuinely know the roads
+            between the hills, the coast, and the temples.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link
+              to="/destinations"
+              className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm text-primary-foreground transition hover:opacity-90"
+            >
+              Explore destinations
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center rounded-full border border-foreground/50 px-6 py-3 text-sm text-foreground transition hover:bg-foreground hover:text-background"
+            >
+              Plan my trip →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* TAGLINE STRIP */}
+      <section className="border-y border-border/60 bg-background">
+        <div className="container-narrow flex flex-col md:flex-row items-start md:items-center justify-between gap-6 py-10">
+          <p className="font-serif text-3xl md:text-4xl italic max-w-2xl">
+            “Simple and clean travel solution.”
+          </p>
+          <div className="grid grid-cols-3 gap-8 text-sm">
+            <div><div className="font-serif text-3xl">12+</div><div className="text-muted-foreground">Years on the road</div></div>
+            <div><div className="font-serif text-3xl">40k</div><div className="text-muted-foreground">Happy km driven</div></div>
+            <div><div className="font-serif text-3xl">24×7</div><div className="text-muted-foreground">Always answering</div></div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="container-narrow py-24">
+        <div className="grid md:grid-cols-12 gap-10 mb-12">
+          <div className="md:col-span-5">
+            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">What we do</p>
+            <h2 className="mt-4 font-serif text-4xl md:text-5xl leading-tight">
+              Four ways to<br />travel with us.
+            </h2>
+          </div>
+          <p className="md:col-span-6 md:col-start-7 text-lg text-muted-foreground self-end">
+            Whether it's a two-hour city ride or a ten-day journey down to
+            Kanyakumari, the same small team looks after your car, your driver,
+            and every detail of the itinerary.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-px bg-border">
+          {services.map((s) => (
+            <div key={s.title} className="bg-background p-10">
+              <h3 className="font-serif text-2xl">{s.title}</h3>
+              <p className="mt-3 text-muted-foreground">{s.body}</p>
+              <Link
+                to="/services"
+                className="mt-6 inline-block text-sm underline underline-offset-4 decoration-sand-300 hover:decoration-foreground"
+              >
+                Learn more
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* DESTINATIONS */}
+      <section className="bg-secondary/40 border-y border-border/60">
+        <div className="container-narrow py-24">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Where we go</p>
+              <h2 className="mt-4 font-serif text-4xl md:text-5xl">Featured destinations</h2>
+            </div>
+            <Link to="/destinations" className="hidden md:inline text-sm underline underline-offset-4">
+              View all →
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            {featured.map((d) => (
+              <Link
+                key={d.name}
+                to="/destinations"
+                className="group block"
+              >
+                <div className="aspect-[4/5] overflow-hidden rounded-sm bg-muted">
+                  <img
+                    src={d.img}
+                    alt={d.name}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="mt-4 flex items-baseline justify-between">
+                  <span className="font-serif text-2xl">{d.name}</span>
+                  <span className="text-xs uppercase tracking-widest text-muted-foreground">{d.tag}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIAL */}
+      <section className="container-narrow py-28">
+        <div className="max-w-3xl">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Kind words</p>
+          <blockquote className="mt-6 font-serif italic text-3xl md:text-4xl leading-snug">
+            “Ravi picked us up at 4 a.m. from Mysore and drove us all the way to
+            Munnar with two long stops in Coorg. The car was spotless, the
+            music was quiet, and he knew every viewpoint by name.”
+          </blockquote>
+          <p className="mt-6 text-sm text-muted-foreground">— Meera & Arjun, Bengaluru</p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="border-t border-border/60 bg-primary text-primary-foreground">
+        <div className="container-narrow py-20 grid md:grid-cols-2 gap-10 items-center">
+          <h2 className="font-serif text-4xl md:text-5xl">
+            Tell us where you<br />want to go.
+          </h2>
+          <div>
+            <p className="text-primary-foreground/80 max-w-md">
+              A quick call is often enough. We'll suggest an itinerary, quote a
+              fair price, and hold the car for you.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="tel:+919999999999" className="inline-flex items-center rounded-full bg-background text-foreground px-6 py-3 text-sm">
+                Call +91 99999 99999
+              </a>
+              <Link to="/contact" className="inline-flex items-center rounded-full border border-primary-foreground/40 px-6 py-3 text-sm hover:bg-primary-foreground hover:text-primary">
+                Write to us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </SitePage>
   );
 }
