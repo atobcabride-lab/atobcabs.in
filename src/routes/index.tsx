@@ -179,8 +179,8 @@ function Index() {
               fair price, and hold the car for you.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="tel:+919999999999" className="inline-flex items-center rounded-full bg-background text-foreground px-6 py-3 text-sm">
-                Call +91 99999 99999
+              <a href="tel:+919686767106" className="inline-flex items-center rounded-full bg-background text-foreground px-6 py-3 text-sm">
+                Call +91-96867 67106
               </a>
               <Link to="/contact" className="inline-flex items-center rounded-full border border-primary-foreground/40 px-6 py-3 text-sm hover:bg-primary-foreground hover:text-primary">
                 Write to us
