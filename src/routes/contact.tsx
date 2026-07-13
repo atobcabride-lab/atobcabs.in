@@ -40,7 +40,7 @@ function ContactPage() {
             const body = encodeURIComponent(
               `Name: ${data.get("name")}\nPhone: ${data.get("phone")}\nDates: ${data.get("dates")}\nTravellers: ${data.get("people")}\n\n${data.get("message")}`,
             );
-            window.location.href = `mailto:hello@atobcabs.in?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:atobcabride@gmail.com?subject=${subject}&body=${body}`;
           }}
         >
           <div className="grid md:grid-cols-2 gap-6">
@@ -69,14 +69,14 @@ function ContactPage() {
           </button>
           <p className="text-xs text-muted-foreground">
             This opens your email app with the details pre-filled. Prefer to
-            call? Dial +91 99999 99999 — we answer 24 × 7.
+            call? Dial +91-96867 67106 — we answer 24 × 7.
           </p>
         </form>
 
         <aside className="lg:col-span-4 lg:col-start-9 space-y-8">
-          <ContactBlock label="Call" value="+91 99999 99999" href="tel:+919999999999" />
-          <ContactBlock label="WhatsApp" value="+91 99999 99999" href="https://wa.me/919999999999" />
-          <ContactBlock label="Email" value="hello@atobcabs.in" href="mailto:hello@atobcabs.in" />
+          <ContactBlock label="Call" value="+91-96867 67106" href="tel:+919686767106" />
+          <ContactBlock label="WhatsApp" value="+91-96867 67106" href="https://wa.me/919686767106" />
+          <ContactBlock label="Email" value="atobcabride@gmail.com" href="mailto:atobcabride@gmail.com" />
           <div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Office</div>
             <div className="mt-2 font-serif text-2xl leading-snug">

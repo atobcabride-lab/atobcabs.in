@@ -88,8 +88,8 @@ export function SiteFooter() {
           <h4 className="text-xs uppercase tracking-widest text-muted-foreground">Reach us</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li>Mysuru, Karnataka</li>
-            <li><a href="tel:+919999999999" className="hover:text-foreground">+91 99999 99999</a></li>
-            <li><a href="mailto:hello@atobcabs.in" className="hover:text-foreground">hello@atobcabs.in</a></li>
+            <li><a href="tel:+919686767106" className="hover:text-foreground">+91-96867 67106</a></li>
+            <li><a href="mailto:atobcabride@gmail.com" className="hover:text-foreground">atobcabride@gmail.com</a></li>
             <li>Open 24 × 7</li>
           </ul>
         </div>
