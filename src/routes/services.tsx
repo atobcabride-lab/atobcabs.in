@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
 import fleetImg from "@/assets/fleet-sedan.jpg";
 
@@ -106,6 +106,12 @@ function ServicesPage() {
               <li>· Toyota Innova Crysta</li>
               <li>· Tempo Traveller (12+1)</li>
             </ul>
+            <Link
+              to="/fleet"
+              className="mt-6 inline-block text-sm underline underline-offset-4 decoration-sand-300 hover:decoration-foreground"
+            >
+              See full fleet →
+            </Link>
           </div>
         </div>
       </section>
