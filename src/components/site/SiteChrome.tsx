@@ -14,7 +14,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="container-narrow flex h-16 items-center justify-between">
         <Link to="/" className="flex items-baseline gap-2">
-          <span className="font-serif text-2xl leading-none">A to B</span>
+          <span className="font-display text-2xl font-semibold leading-none tracking-tight">A to B</span>
           <span className="text-[0.7rem] uppercase tracking-[0.25em] text-muted-foreground">
             Cabs · Mysore
           </span>
@@ -48,7 +48,7 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border/60 bg-secondary/40">
       <div className="container-narrow grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="font-serif text-3xl">A to B Cabs</div>
+          <div className="font-display text-3xl font-semibold tracking-tight">A to B Cabs</div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
             Simple and clean travel solutions from the heart of Mysore —
             crafted for families, couples, and travellers who value comfort.
