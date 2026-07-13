@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
 import fleetImg from "@/assets/fleet-sedan.jpg";
 
