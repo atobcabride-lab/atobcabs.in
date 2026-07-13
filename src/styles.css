@@ -39,6 +39,7 @@
   --color-sand-900: var(--sand-900);
   --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
   --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -96,6 +97,10 @@
 
 @utility font-sans {
   font-family: var(--font-sans);
+}
+
+@utility font-display {
+  font-family: var(--font-display);
 }
 
 @utility container-narrow {
