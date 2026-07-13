@@ -17,27 +17,13 @@ export function SiteHeader() {
           <div className="relative flex h-11 w-11 items-center justify-center rounded-xl border-2 border-accent bg-background shadow-sm transition group-hover:border-primary group-hover:shadow-md">
             <svg
               viewBox="0 0 24 24"
-              fill="none"
-              className="h-7 w-7 -translate-y-0.5 text-primary"
+              fill="currentColor"
+              className="h-6 w-6 text-primary"
               aria-hidden="true"
             >
-              <path
-                d="M2 15.5V17a2 2 0 0 0 2 2h1a2.5 2.5 0 0 1 4.5 0h5a2.5 2.5 0 0 1 4.5 0h1a2 2 0 0 0 2-2v-1.5a1 1 0 0 0-1-1h-1.5l-1.2-3.6a2 2 0 0 0-1.9-1.4h-8.8a2 2 0 0 0-1.9 1.4L4.5 14.5H3a1 1 0 0 0-1 1Z"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M6.5 14.5h11M5 11.5h2M17 11.5h2"
-                stroke="currentColor"
-                strokeWidth="1.3"
-                strokeLinecap="round"
-              />
-              <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
-              <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+              <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H6.5C5.84 5 5.28 5.42 5.08 6.01L3 12V20C3 20.55 3.45 21 4 21H5C5.55 21 6 20.55 6 20V19H18V20C18 20.55 18.45 21 19 21H20C20.55 21 21 20.55 21 20V12L18.92 6.01ZM6.85 7H17.14L18.22 10.11H5.78L6.85 7ZM19 17H5V12H19V17ZM7.5 16C8.33 16 9 15.33 9 14.5C9 13.67 8.33 13 7.5 13C6.67 13 6 13.67 6 14.5C6 15.33 6.67 16 7.5 16ZM16.5 16C17.33 16 18 15.33 18 14.5C18 13.67 17.33 13 16.5 13C15.67 13 15 13.67 15 14.5C15 15.33 15.67 16 16.5 16Z" />
             </svg>
-            <span className="absolute bottom-1 left-1/2 -translate-x-1/2 rounded-full bg-primary px-1.5 py-[0.15rem] font-display text-[0.5rem] font-bold leading-none tracking-tight text-primary-foreground shadow-sm">
+            <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 rounded-full border-2 border-background bg-primary px-1.5 py-[0.15rem] font-display text-[0.5rem] font-bold leading-none tracking-tight text-primary-foreground shadow-sm">
               A→B
             </span>
           </div>
