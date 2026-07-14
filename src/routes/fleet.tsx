@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
-import sedanImg from "@/assets/fleet-sedan.jpg";
-import suvAsset from "@/assets/fleet-suv.jpg.asset.json";
+import sedanAsset from "@/assets/fleet-sedan-etios.jpg.asset.json";
+import suvAsset from "@/assets/fleet-suv-innova-crysta.jpg.asset.json";
 import tempoAsset from "@/assets/fleet-tempo.jpg.asset.json";
-import minibusAsset from "@/assets/fleet-minibus.jpg.asset.json";
+import minibusAsset from "@/assets/fleet-minibus-clean.jpg.asset.json";
 import busAsset from "@/assets/fleet-bus.jpg.asset.json";
 
 export const Route = createFileRoute("/fleet")({
@@ -31,8 +31,8 @@ const categories = [
     name: "Sedan",
     seats: "4 seater",
     body: "Toyota Etios / Swift Dzire. Quiet, fuel-efficient and ideal for couples, small families and airport transfers.",
-    img: sedanImg,
-    alt: "Clean white sedan for city rides and airport transfers",
+    img: sedanAsset.url,
+    alt: "Clean white Toyota Etios sedan for city rides and airport transfers",
   },
   {
     name: "SUV",
