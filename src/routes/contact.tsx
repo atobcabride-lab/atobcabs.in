@@ -80,7 +80,7 @@ function ContactPage() {
           <div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Office</div>
             <div className="mt-2 font-serif text-2xl leading-snug">
-              Sayyaji Rao Road<br />Mysuru 570001<br />Karnataka, India
+              No 140, Sumukha, 7th Cross<br />Siddivinayaka block, Teachers layout<br />Mysore-570011
             </div>
           </div>
           <div>
