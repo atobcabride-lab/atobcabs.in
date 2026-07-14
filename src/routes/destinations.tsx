@@ -1,8 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
-import mysoreImg from "@/assets/dest-mysore.jpg";
-import coorgImg from "@/assets/dest-coorg.jpg";
+import mysoreAsset from "@/assets/dest-mysore-palace.jpg.asset.json";
+import coorgAsset from "@/assets/dest-coorg-abbey-falls.jpg.asset.json";
+import wayanadAsset from "@/assets/dest-wayanad-wildlife.jpg.asset.json";
 import ootyImg from "@/assets/dest-ooty.jpg";
+import kodaikanalAsset from "@/assets/dest-kodaikanal-lake.jpg.asset.json";
+import maduraiAsset from "@/assets/dest-madurai-meenakshi.jpg.asset.json";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import kanyakumariImg from "@/assets/dest-kanyakumari.jpg";
 import munnarImg from "@/assets/hero-munnar.jpg";
