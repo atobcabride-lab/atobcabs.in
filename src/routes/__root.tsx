@@ -84,13 +84,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "A to B Cabs, Mysore — simple and clean travel solutions. Local sightseeing, outstation tours, airport transfers, and honeymoon packages across South India.",
       },
       { name: "author", content: "A to B Cabs" },
-      { property: "og:title", content: "A to B Cabs — Mysore" },
+      { property: "og:title", content: "A to B Cabs — Mysore Taxi & South India Tour Packages" },
       {
         property: "og:description",
-        content: "Simple and clean travel solutions across South India.",
+        content: "A to B Cabs, Mysore — simple and clean travel solutions. Local sightseeing, outstation tours, airport transfers, and honeymoon packages across South India.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "A to B Cabs — Mysore Taxi & South India Tour Packages" },
+      { name: "twitter:description", content: "A to B Cabs, Mysore — simple and clean travel solutions. Local sightseeing, outstation tours, airport transfers, and honeymoon packages across South India." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/100708ef-276c-41cb-a057-dbded496704f/id-preview-d856b317--78b47603-8fc4-4c08-8204-9688e9d4df07.lovable.app-1784019765365.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/100708ef-276c-41cb-a057-dbded496704f/id-preview-d856b317--78b47603-8fc4-4c08-8204-9688e9d4df07.lovable.app-1784019765365.png" },
     ],
     links: [
       {
