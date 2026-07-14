@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
+import { Phone } from "lucide-react";
 import type { ReactNode } from "react";
+
 
 const nav = [
   { to: "/", label: "Home" },
@@ -52,10 +54,12 @@ export function SiteHeader() {
         </nav>
         <a
           href="tel:+919686767106"
-          className="hidden md:inline-flex items-center rounded-full bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-primary-foreground shadow-sm transition hover:bg-primary/90 hover:shadow-md"
+          className="hidden md:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-widest text-primary-foreground shadow-sm transition hover:bg-primary/90 hover:shadow-md"
         >
+          <Phone className="h-3.5 w-3.5" strokeWidth={2.5} />
           Book a ride
         </a>
+
       </div>
     </header>
   );
