@@ -72,18 +72,45 @@ function AboutPage() {
       </section>
 
       <section className="bg-secondary/40 border-y border-border/60">
-        <div className="container-narrow py-20 grid md:grid-cols-3 gap-10">
-          {[
-            { t: "Honest fares", b: "One quote up-front. No mid-trip surprises, no inflated toll or fuel add-ons." },
-            { t: "Clean cars", b: "Every vehicle is washed and vacuumed before pickup. Non-negotiable." },
-            { t: "Real drivers", b: "Long-term, salaried drivers who know your route — not gig strangers." },
-          ].map((v) => (
-            <div key={v.t}>
-              <h3 className="font-serif text-2xl">{v.t}</h3>
-              <p className="mt-3 text-muted-foreground">{v.b}</p>
+        <div className="container-narrow py-20">
+          <div className="text-center mb-12">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground">Team Highlight</div>
+            <h2 className="font-serif text-3xl md:text-4xl mt-3">Meet the owner</h2>
+          </div>
+
+          <div className="max-w-3xl mx-auto bg-background rounded-2xl border border-border/60 shadow-sm p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
+            <div className="shrink-0">
+              <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center text-primary-foreground shadow-inner ring-4 ring-primary/10">
+                <span className="font-display text-4xl font-bold">VG</span>
+              </div>
             </div>
-          ))}
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-display text-2xl md:text-3xl">Vinayaka G S</h3>
+                <p className="text-sm uppercase tracking-widest text-muted-foreground mt-1">Founder & Owner</p>
+              </div>
+              <p className="text-foreground/90 leading-relaxed">
+                A tech enthusiast and travel geek at heart, Vinayaka has spent years in tourism and hospitality, learning what travellers actually need on the road. He built A to B Cabs around that insight: reliable cars, transparent pricing, and a team that treats every trip like its own.
+              </p>
+              <p className="text-foreground/90 leading-relaxed">
+                Today he still oversees operations personally — from route planning to driver training — making sure the small-team care that started the company stays in every ride.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section className="container-narrow py-20 grid md:grid-cols-3 gap-10">
+        {[
+          { t: "Honest fares", b: "One quote up-front. No mid-trip surprises, no inflated toll or fuel add-ons." },
+          { t: "Clean cars", b: "Every vehicle is washed and vacuumed before pickup. Non-negotiable." },
+          { t: "Real drivers", b: "Long-term, salaried drivers who know your route — not gig strangers." },
+        ].map((v) => (
+          <div key={v.t}>
+            <h3 className="font-serif text-2xl">{v.t}</h3>
+            <p className="mt-3 text-muted-foreground">{v.b}</p>
+          </div>
+        ))}
       </section>
     </SitePage>
   );
