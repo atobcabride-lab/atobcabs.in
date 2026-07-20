@@ -4,6 +4,7 @@ import mysoreImg from "@/assets/dest-mysore-palace.jpg";
 import coorgImg from "@/assets/dest-coorg-abbey-falls.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import ootyImg from "@/assets/dest-ooty.jpg";
+import kabiniImg from "@/assets/dest-kabini.jpg";
 import { SitePage } from "@/components/site/SiteChrome";
 
 export const Route = createFileRoute("/")({
@@ -15,6 +16,7 @@ const featured = [
   { name: "Coorg", tag: "Coffee country", img: coorgImg },
   { name: "Ooty", tag: "Nilgiri hills", img: ootyImg },
   { name: "Alleppey", tag: "Backwaters", img: alleppeyImg },
+  { name: "Kabini", tag: "Wildlife", img: kabiniImg },
 ];
 
 const services = [
@@ -127,7 +129,7 @@ function Index() {
               View all →
             </Link>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             {featured.map((d) => (
               <Link
                 key={d.name}

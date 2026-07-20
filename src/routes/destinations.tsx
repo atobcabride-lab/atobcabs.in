@@ -9,6 +9,7 @@ import maduraiImg from "@/assets/dest-madurai-meenakshi.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import kanyakumariImg from "@/assets/dest-kanyakumari.jpg";
 import munnarImg from "@/assets/hero-munnar.jpg";
+import kabiniImg from "@/assets/dest-kabini.jpg";
 
 export const Route = createFileRoute("/destinations")({
   head: () => ({
@@ -17,7 +18,7 @@ export const Route = createFileRoute("/destinations")({
       {
         name: "description",
         content:
-          "Mysore, Coorg, Wayanad, Ooty, Kodaikanal, Madurai, Kanyakumari, Alleppey, Munnar and more — private car tours across South India.",
+          "Mysore, Coorg, Wayanad, Ooty, Kodaikanal, Madurai, Kanyakumari, Alleppey, Munnar, Kabini and more — private car tours across South India.",
       },
       { property: "og:title", content: "South India Destinations — A to B Cabs" },
       {
@@ -40,6 +41,7 @@ const destinations = [
   { name: "Kanyakumari", state: "Tamil Nadu", img: kanyakumariImg, note: "Where three seas meet — sunrise and sunset over the ocean." },
   { name: "Alleppey", state: "Kerala", img: alleppeyImg, note: "Houseboats on palm-lined backwaters." },
   { name: "Munnar", state: "Kerala", img: munnarImg, note: "Endless tea plantations in the Western Ghats." },
+  { name: "Kabini", state: "Karnataka", img: kabiniImg, note: "River safaris, elephants and quiet forest lodges." },
 ];
 
 function DestinationsPage() {
@@ -48,7 +50,7 @@ function DestinationsPage() {
       <PageHero
         eyebrow="Destinations"
         title="A slow map of South India."
-        lead="Nine places we return to, again and again. Combine any of them into a two-day escape or a two-week loop."
+        lead="Ten places we return to, again and again. Combine any of them into a two-day escape or a two-week loop."
       />
 
       <section className="container-narrow py-20">
