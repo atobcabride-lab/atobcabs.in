@@ -129,7 +129,7 @@ function Index() {
               View all →
             </Link>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             {featured.map((d) => (
               <Link
                 key={d.name}
