@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
-import sedanAsset from "@/assets/fleet-sedan-etios.jpg.asset.json";
-import suvAsset from "@/assets/fleet-suv-innova-crysta.jpg.asset.json";
-import tempoAsset from "@/assets/fleet-tempo.jpg.asset.json";
-import minibusAsset from "@/assets/fleet-minibus-clean.jpg.asset.json";
-import busAsset from "@/assets/fleet-bus.jpg.asset.json";
+import sedanImg from "@/assets/fleet-sedan-etios.jpg";
+import suvImg from "@/assets/fleet-suv-innova-crysta.jpg";
+import tempoImg from "@/assets/fleet-tempo.jpg";
+import minibusImg from "@/assets/fleet-minibus-clean.jpg";
+import busImg from "@/assets/fleet-bus.jpg";
 
 export const Route = createFileRoute("/fleet")({
   head: () => ({
@@ -31,35 +31,35 @@ const categories = [
     name: "Sedan",
     seats: "4 seater",
     body: "Toyota Etios / Swift Dzire. Quiet, fuel-efficient and ideal for couples, small families and airport transfers.",
-    img: sedanAsset.url,
+    img: sedanImg,
     alt: "Clean white Toyota Etios sedan for city rides and airport transfers",
   },
   {
     name: "SUV",
     seats: "7 seater",
     body: "Toyota Innova Crysta / Maruti Ertiga. Spacious, high-clearance and perfect for hill roads and longer outstation tours.",
-    img: suvAsset.url,
+    img: suvImg,
     alt: "Premium white SUV for family trips and hill station travel",
   },
   {
     name: "Tempo Traveller",
     seats: "12 seater",
     body: "Force Traveller with push-back seats and generous luggage space. Great for medium groups and temple or heritage tours.",
-    img: tempoAsset.url,
+    img: tempoImg,
     alt: "White 12-seater Tempo Traveller van for group tours",
   },
   {
     name: "Mini Bus",
     seats: "21 seater",
     body: "Compact bus with reclining seats and AC. Suited for school trips, corporate outings and wedding parties.",
-    img: minibusAsset.url,
+    img: minibusImg,
     alt: "Modern white 21-seater mini bus parked near Mysore palace",
   },
   {
     name: "Bus",
     seats: "50 seater",
     body: "Large luxury coach for big groups, events and interstate travel. On-board amenities with an experienced crew.",
-    img: busAsset.url,
+    img: busImg,
     alt: "Large white 50-seater luxury coach bus on a highway",
   },
 ];

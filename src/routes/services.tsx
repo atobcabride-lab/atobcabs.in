@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
-import fleetAsset from "@/assets/fleet-sedan-etios.jpg.asset.json";
+import fleetImg from "@/assets/fleet-sedan-etios.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -85,7 +85,7 @@ function ServicesPage() {
       <section className="bg-secondary/40 border-y border-border/60">
         <div className="container-narrow py-20 grid md:grid-cols-2 gap-12 items-center">
           <img
-            src={fleetAsset.url}
+            src={fleetImg}
             alt="Clean white Toyota Etios sedan for A to B Cabs tours"
             width={1400}
             height={1000}

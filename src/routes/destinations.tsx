@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero, SitePage } from "@/components/site/SiteChrome";
-import mysoreAsset from "@/assets/dest-mysore-palace.jpg.asset.json";
-import coorgAsset from "@/assets/dest-coorg-abbey-falls.jpg.asset.json";
-import wayanadAsset from "@/assets/dest-wayanad-wildlife.jpg.asset.json";
+import mysoreImg from "@/assets/dest-mysore-palace.jpg";
+import coorgImg from "@/assets/dest-coorg-abbey-falls.jpg";
+import wayanadImg from "@/assets/dest-wayanad-wildlife.jpg";
 import ootyImg from "@/assets/dest-ooty.jpg";
-import kodaikanalAsset from "@/assets/dest-kodaikanal-lake.jpg.asset.json";
-import maduraiAsset from "@/assets/dest-madurai-meenakshi.jpg.asset.json";
+import kodaikanalImg from "@/assets/dest-kodaikanal-lake.jpg";
+import maduraiImg from "@/assets/dest-madurai-meenakshi.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import kanyakumariImg from "@/assets/dest-kanyakumari.jpg";
 import munnarImg from "@/assets/hero-munnar.jpg";
@@ -31,12 +31,12 @@ export const Route = createFileRoute("/destinations")({
 });
 
 const destinations = [
-  { name: "Mysore", state: "Karnataka", img: mysoreAsset.url, note: "Palace, markets, and the city we call home." },
-  { name: "Coorg", state: "Karnataka", img: coorgAsset.url, note: "Coffee estates, misty mornings and slow days." },
-  { name: "Wayanad", state: "Kerala", img: wayanadAsset.url, note: "Wildlife, waterfalls and forest trails." },
+  { name: "Mysore", state: "Karnataka", img: mysoreImg, note: "Palace, markets, and the city we call home." },
+  { name: "Coorg", state: "Karnataka", img: coorgImg, note: "Coffee estates, misty mornings and slow days." },
+  { name: "Wayanad", state: "Kerala", img: wayanadImg, note: "Wildlife, waterfalls and forest trails." },
   { name: "Ooty", state: "Tamil Nadu", img: ootyImg, note: "Nilgiri hills, tea gardens and the toy train." },
-  { name: "Kodaikanal", state: "Tamil Nadu", img: kodaikanalAsset.url, note: "Pine forests, lakes and cool cliffside walks." },
-  { name: "Madurai", state: "Tamil Nadu", img: maduraiAsset.url, note: "The Meenakshi temple and a living old city." },
+  { name: "Kodaikanal", state: "Tamil Nadu", img: kodaikanalImg, note: "Pine forests, lakes and cool cliffside walks." },
+  { name: "Madurai", state: "Tamil Nadu", img: maduraiImg, note: "The Meenakshi temple and a living old city." },
   { name: "Kanyakumari", state: "Tamil Nadu", img: kanyakumariImg, note: "Where three seas meet — sunrise and sunset over the ocean." },
   { name: "Alleppey", state: "Kerala", img: alleppeyImg, note: "Houseboats on palm-lined backwaters." },
   { name: "Munnar", state: "Kerala", img: munnarImg, note: "Endless tea plantations in the Western Ghats." },
