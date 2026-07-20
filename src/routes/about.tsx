@@ -40,8 +40,8 @@ function AboutPage() {
           </p>
           <p>
             We don't run a call centre. When you write to us or call, you
-            reach the same three people who plan the trip, dispatch the car,
-            and pick up the phone if anything is off. That is what we mean by
+            reach the owner who plans the trip, dispatches the car, and
+            picks up the phone if anything is off. That is what we mean by
             <em className="font-serif"> simple and clean</em>.
           </p>
           <p>
@@ -58,7 +58,7 @@ function AboutPage() {
           </div>
           <div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Team</div>
-            <div className="font-serif text-3xl mt-1">3 owners · 11 drivers</div>
+            <div className="font-serif text-3xl mt-1">1 owner · 18 staff including drivers</div>
           </div>
           <div>
             <div className="text-xs uppercase tracking-widest text-muted-foreground">Cars</div>
