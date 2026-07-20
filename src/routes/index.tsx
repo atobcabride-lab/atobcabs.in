@@ -16,6 +16,7 @@ const featured = [
   { name: "Coorg", tag: "Coffee country", img: coorgImg },
   { name: "Ooty", tag: "Nilgiri hills", img: ootyImg },
   { name: "Alleppey", tag: "Backwaters", img: alleppeyImg },
+  { name: "Kabini", tag: "Wildlife", img: kabiniImg },
 ];
 
 const services = [
