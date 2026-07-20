@@ -4,6 +4,7 @@ import mysoreImg from "@/assets/dest-mysore-palace.jpg";
 import coorgImg from "@/assets/dest-coorg-abbey-falls.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import ootyImg from "@/assets/dest-ooty.jpg";
+import kabiniImg from "@/assets/dest-kabini.jpg";
 import { SitePage } from "@/components/site/SiteChrome";
 
 export const Route = createFileRoute("/")({

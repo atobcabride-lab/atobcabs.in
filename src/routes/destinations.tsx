@@ -9,6 +9,7 @@ import maduraiImg from "@/assets/dest-madurai-meenakshi.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import kanyakumariImg from "@/assets/dest-kanyakumari.jpg";
 import munnarImg from "@/assets/hero-munnar.jpg";
+import kabiniImg from "@/assets/dest-kabini.jpg";
 
 export const Route = createFileRoute("/destinations")({
   head: () => ({
