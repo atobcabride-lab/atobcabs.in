@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-munnar.jpg";
-import mysoreAsset from "@/assets/dest-mysore-palace.jpg.asset.json";
-import coorgAsset from "@/assets/dest-coorg-abbey-falls.jpg.asset.json";
+import mysoreImg from "@/assets/dest-mysore-palace.jpg";
+import coorgImg from "@/assets/dest-coorg-abbey-falls.jpg";
 import alleppeyImg from "@/assets/dest-alleppey.jpg";
 import ootyImg from "@/assets/dest-ooty.jpg";
 import { SitePage } from "@/components/site/SiteChrome";
@@ -11,8 +11,8 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { name: "Mysore", tag: "Palace city", img: mysoreAsset.url },
-  { name: "Coorg", tag: "Coffee country", img: coorgAsset.url },
+  { name: "Mysore", tag: "Palace city", img: mysoreImg },
+  { name: "Coorg", tag: "Coffee country", img: coorgImg },
   { name: "Ooty", tag: "Nilgiri hills", img: ootyImg },
   { name: "Alleppey", tag: "Backwaters", img: alleppeyImg },
 ];
