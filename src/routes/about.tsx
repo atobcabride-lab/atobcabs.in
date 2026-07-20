@@ -78,23 +78,52 @@ function AboutPage() {
             <h2 className="font-serif text-3xl md:text-4xl mt-3">Meet the owner</h2>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-background rounded-2xl border border-border/60 shadow-sm p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
-            <div className="shrink-0">
-              <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center text-primary-foreground shadow-inner ring-4 ring-primary/10">
-                <span className="font-display text-4xl font-bold">VG</span>
+          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+            {/* Owner profile */}
+            <div className="bg-background rounded-2xl border border-border/60 shadow-sm p-8 md:p-10 flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
+              <div className="shrink-0">
+                <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center text-primary-foreground shadow-inner ring-4 ring-primary/10">
+                  <span className="font-display text-4xl font-bold">VG</span>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-display text-2xl md:text-3xl">Vinayaka G S</h3>
+                  <p className="text-sm uppercase tracking-widest text-muted-foreground mt-1">Founder & Owner</p>
+                </div>
+                <p className="text-foreground/90 leading-relaxed">
+                  A tech enthusiast and travel geek at heart, Vinayaka has spent years in tourism and hospitality, learning what travellers actually need on the road. He built A to B Cabs around that insight: reliable cars, transparent pricing, and a team that treats every trip like its own.
+                </p>
+                <p className="text-foreground/90 leading-relaxed">
+                  Today he still oversees operations personally — from route planning to driver training — making sure the small-team care that started the company stays in every ride.
+                </p>
               </div>
             </div>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-display text-2xl md:text-3xl">Vinayaka G S</h3>
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mt-1">Founder & Owner</p>
+
+            {/* Press story */}
+            <div className="bg-background rounded-2xl border border-border/60 shadow-sm p-8 md:p-10 flex flex-col">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px flex-1 bg-border/60" />
+                <span className="text-xs uppercase tracking-widest text-muted-foreground">In the press</span>
+                <div className="h-px flex-1 bg-border/60" />
               </div>
-              <p className="text-foreground/90 leading-relaxed">
-                A tech enthusiast and travel geek at heart, Vinayaka has spent years in tourism and hospitality, learning what travellers actually need on the road. He built A to B Cabs around that insight: reliable cars, transparent pricing, and a team that treats every trip like its own.
-              </p>
-              <p className="text-foreground/90 leading-relaxed">
-                Today he still oversees operations personally — from route planning to driver training — making sure the small-team care that started the company stays in every ride.
-              </p>
+
+              <blockquote className="font-serif text-xl md:text-2xl leading-relaxed text-foreground/95 italic border-l-4 border-primary/60 pl-6 mb-6">
+                “I left engineering not because I failed, but because I did not want a life of pressure with nothing to show for it. I would rather earn respect through the work I do.”
+              </blockquote>
+
+              <div className="space-y-4 text-foreground/85 leading-relaxed flex-1">
+                <p>
+                  In 2016, a local news story profiled Vinayaka’s unusual path: an Information Science engineer from MIT, Mysore, who had worked with Joyo Taxi Technologies and Tata Motors in Bangalore, yet chose to return home within a year to start his own travel business.
+                </p>
+                <p>
+                  He began with one car and four friends’ cars, serving airport runs and local travellers. Fluent in four languages, he found that personal attention — not corporate titles — was what customers valued most. That same belief still drives A to B Cabs today.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-border/60 text-xs text-muted-foreground">
+                Originally reported in May 2016 · Translated from Kannada
+              </div>
             </div>
           </div>
         </div>
